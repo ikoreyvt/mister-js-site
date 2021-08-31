@@ -20,15 +20,17 @@ function App() {
         ></img>
       </div>
       <Router>
+        <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", height: "30vh", marginTop: "6vh"}}>
         <NavLink to="/inventory">
-          <div>VIEW OUR INVENTORY</div>
+          <div style={{ display:"flex", width:"25vw", height: "30vh", alignItems:"center", justifyContent: "center" }}><p>VIEW OUR INVENTORY</p></div>
         </NavLink>
         <NavLink to="/contact">
-          <div>CONTACT/MAKE A REQUEST</div>
+          <div style={{ display:"flex", width:"25vw", height: "30vh", alignItems:"center", justifyContent: "center", }}><p style={{ textAlign: "center"}}>LEAVE A COMMENT OR MAKE A REQUEST</p></div>
         </NavLink>
         <NavLink to="/about">
-          <div>ABOUT</div>
+          <div style={{ display:"flex", width:"25vw", height: "30vh", alignItems:"center", justifyContent: "center" }}><p>ABOUT</p></div>
         </NavLink>
+        </div>
         <Switch>
           <Route path="/inventory" />
           <Route path="/contact" />
