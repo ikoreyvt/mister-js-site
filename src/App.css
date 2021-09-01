@@ -1,20 +1,40 @@
 .home-nav-div {
-  background-image: url("./images/beer_photo.jpg");
-  background-size: 25vw;
   display: flex;
   width: 25vw;
   height: 30vh;
   align-items: center;
   justify-content: center;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 .home-nav-div:hover {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2)
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
 
 .home-nav-button {
-    border: 2px white solid;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 0 4px 0 4px;
+  border: 2px white solid;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 4px 0 4px;
+  max-width: 60%;
+  min-width: 50%;
+  text-align: center;
+}
+
+.home-nav-button > p {
+    color: white;
+}
+
+#inventory-nav {
+  background-image: url("./images/beer_photo.jpg");
+  background-size: 25vw;
+}
+
+#contact-nav {
+    background-image: url("./images/photo-1505075106905-fb052892c116.jpeg");
+    background-size: 25vw;
+}
+
+#about-nav {
+    background-image: url("./images/photo-1603989872391-359eb0b42a58.jpeg");
+    background-size: 25vw;
 }

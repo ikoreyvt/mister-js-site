@@ -7,7 +7,6 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-import { Button } from "@material-ui/core";
 
 function App() {
   return (
@@ -34,44 +33,28 @@ function App() {
           }}
         >
           <NavLink to="/inventory" style={{ textDecoration: "none" }}>
-            <div className="home-nav-div">
+            <div className="home-nav-div" id="inventory-nav">
               <div className="home-nav-button">
-                <p style={{ color: "white" }}>VIEW OUR INVENTORY</p>
+                <p>VIEW OUR INVENTORY</p>
               </div>
             </div>
           </NavLink>
 
-          <Button variant="contained">
-            <NavLink to="/contact">
-              <div
-                style={{
-                  display: "flex",
-                  width: "25vw",
-                  height: "30vh",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p style={{ textAlign: "center" }}>
+          <NavLink to="/contact" style={{ textDecoration: "none" }}>
+            <div className="home-nav-div" id="contact-nav">
+              <div className="home-nav-button">
+                <p>
                   LEAVE A COMMENT OR MAKE A REQUEST
                 </p>
               </div>
-            </NavLink>
-          </Button>
+            </div>
+          </NavLink>
 
-          <NavLink to="/about">
-            <div
-              style={{
-                display: "flex",
-                width: "25vw",
-                height: "30vh",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Button variant="outlined">
+          <NavLink to="/about" style={{ textDecoration: "none" }}>
+            <div className="home-nav-div" id="about-nav">
+              <div className="home-nav-button">
                 <p>ABOUT</p>
-              </Button>
+              </div>
             </div>
           </NavLink>
         </div>
